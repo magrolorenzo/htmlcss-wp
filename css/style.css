@@ -9,46 +9,68 @@ body{
 }
 
 .wrapper{
-    width: 80%;
+    width: 70%;
     margin:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 
-/*****______________ Header con Titolo ______________*****/
+/*****______________ Header con Titoli ______________*****/
 header{
+    text-transform: uppercase;
     background-image: url('../img/trees.jpg');
     padding: 40px;
-    border: solid 5px white;
+    border: solid 10px white;
     color: white;
 }
 #titolo1{
-    text-transform: uppercase;
+    font-size: 45px;
+    margin: 10px;
 }
 #titolo2{
-    font-weight:100;
+    font-size: 20px;
+    font-weight:lighter;
 }
 
 /*****______________ Menù ______________*****/
 .menu{
+    font-size: 15px;
+    text-transform: uppercase;
     background-color: #504741;
     margin-bottom: 20px;
 }
 .menu ul{
-    align: center;
+    /* align: center; */
 }
 .menu li{
     display: inline-block;
-    text-decoration: none;
-
+    height: 50px;
+    line-height: 50px;
+    padding: 0 5px;
 }
+.menu li:hover{
+    background-color:#333333;
+}
+.menu a{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 5px;
+    color: white;
+    text-decoration: none;
+}
+.dropdown::after{
+    content: "⮟";
+    margin-left: 5px;
+}
+
+
 
 
 .container{
     width: 100%;
-    border: dotted 1px;
 }
 
 .container::after{
