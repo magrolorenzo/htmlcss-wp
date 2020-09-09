@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 80%;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: lightgrey;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Bordi inseriti nei vari elementi per orientarmi */
+
+header{
+    background-color: yellow;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: solid 2px;
+}
+
+.container{
+    width: 100%;
+    border: dotted 1px;
+}
+
+.container::after{
+    content: "";
+    display: table;
+    clear:both; /* Indica di paartire con una nuova riga dopo di esso (non vuole elementi ad entrambi i lati)*/
+}
+
+aside{
+    background-color: violet;
+    width: calc(30% - 10px);
+    padding: 20px;
+    border: solid 2px;
+}
+
+.left{
+    /* height: 400px; */
+    margin: 10px 10px 10px 0;
+    float: left;
+}
+
+main{
+    /* height: 600px; */
+    float: left;
+    width: calc(40% - 20px);
+    margin:10px;
+    padding: 20px;
+    background-color: purple;
+    border: solid 2px;
+}
+
+.right-top{
+    /* height: 250px; */
+    margin: 10px 0 10px 10px;
+    float: left;
+}
+
+.right-bottom{
+    /* height: 250px; */
+    margin: 10px 0 10px 10px;
+    float: right;
+}
+
+footer{
+    background-color: lightblue;
+    margin-top: 10px;
+    padding: 20px;
+    border: solid 2px;
+}
