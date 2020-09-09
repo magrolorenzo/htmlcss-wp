@@ -12,7 +12,6 @@ body{
     width: 65%;
     margin:auto;
     margin-top: 25px;
-    margin-bottom: 25px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -75,10 +74,8 @@ header{
     display: table;
     clear:both;
 }
-
 aside{
     width: calc(25% - 10px);
-    border: solid 2px;
     border-radius: 3px;
     float: left;
 }
@@ -96,18 +93,23 @@ aside div{
     border-radius: 3px;
     float: left;
 }
+aside div h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
 aside ul{
     list-style: none;
     padding: 10px;
 }
-aside li{
-    padding: 10px;
+aside a{
+    display: inline-block;
+    color: #99cc33;
+    margin: 5px 0;
+    text-decoration: none;
 }
-
 .right-top{
     margin-bottom: 10px;
 }
-
 .right-middle{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -119,7 +121,6 @@ aside li{
 main{
     background-color: white;
     width: calc(50% - 20px);
-    border: solid 2px;
     margin: 0 10px 0 10px;
     float: left;
 }
