@@ -4,24 +4,47 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('../img/wood.png');
+}
+
 .wrapper{
     width: 80%;
     margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: lightgrey;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Bordi inseriti nei vari elementi per orientarmi */
-
+/*****______________ Header con Titolo ______________*****/
 header{
-    background-color: yellow;
-    margin-bottom: 10px;
-    padding: 20px;
-    border: solid 2px;
+    background-image: url('../img/trees.jpg');
+    padding: 40px;
+    border: solid 5px white;
+    color: white;
 }
+#titolo1{
+    text-transform: uppercase;
+}
+#titolo2{
+    font-weight:100;
+}
+
+/*****______________ Menù ______________*****/
+.menu{
+    background-color: #504741;
+    margin-bottom: 20px;
+}
+.menu ul{
+    align: center;
+}
+.menu li{
+    display: inline-block;
+    text-decoration: none;
+
+}
+
 
 .container{
     width: 100%;
@@ -31,7 +54,7 @@ header{
 .container::after{
     content: "";
     display: table;
-    clear:both; /* Indica di paartire con una nuova riga dopo di esso (non vuole elementi ad entrambi i lati)*/
+    clear:both;
 }
 
 aside{
@@ -39,16 +62,11 @@ aside{
     width: calc(30% - 10px);
     padding: 20px;
     border: solid 2px;
-}
-
-.left{
-    /* height: 400px; */
     margin: 10px 10px 10px 0;
     float: left;
 }
 
 main{
-    /* height: 600px; */
     float: left;
     width: calc(40% - 20px);
     margin:10px;
@@ -58,13 +76,11 @@ main{
 }
 
 .right-top{
-    /* height: 250px; */
     margin: 10px 0 10px 10px;
     float: left;
 }
 
 .right-bottom{
-    /* height: 250px; */
     margin: 10px 0 10px 10px;
     float: right;
 }
