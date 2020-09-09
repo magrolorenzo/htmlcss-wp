@@ -9,10 +9,10 @@ body{
 }
 
 .wrapper{
-    width: 70%;
+    width: 65%;
     margin:auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -41,9 +41,9 @@ header{
     background-color: #504741;
     margin-bottom: 20px;
 }
-.menu ul{
-    /* align: center; */
-}
+/* .menu ul{
+    text-align: center;
+} */
 .menu li{
     display: inline-block;
     height: 50px;
@@ -66,49 +66,68 @@ header{
     margin-left: 5px;
 }
 
-
-
-
-.container{
+/*****______________ Sezione centrale della pagina ______________*****/
+.corpo-pagina{
     width: 100%;
 }
-
-.container::after{
+.corpo-pagina::after{
     content: "";
     display: table;
     clear:both;
 }
 
 aside{
-    background-color: violet;
-    width: calc(30% - 10px);
-    padding: 20px;
+    width: calc(25% - 10px);
     border: solid 2px;
-    margin: 10px 10px 10px 0;
+    border-radius: 3px;
     float: left;
 }
-
-main{
-    float: left;
-    width: calc(40% - 20px);
-    margin:10px;
+aside.left{
+    margin-right: 10px;
+}
+aside.right{
+    margin-left: 10px;
+}
+aside div{
+    text-align: left;
+    background-color: white;
+    width: 100%;
     padding: 20px;
-    background-color: purple;
-    border: solid 2px;
+    border-radius: 3px;
+    float: left;
+}
+aside ul{
+    list-style: none;
+    padding: 10px;
+}
+aside li{
+    padding: 10px;
 }
 
 .right-top{
-    margin: 10px 0 10px 10px;
+    margin-bottom: 10px;
+}
+
+.right-middle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.right-bottom{
+    margin-top: 10px;
+}
+
+main{
+    background-color: white;
+    width: calc(50% - 20px);
+    border: solid 2px;
+    margin: 0 10px 0 10px;
     float: left;
 }
 
-.right-bottom{
-    margin: 10px 0 10px 10px;
-    float: right;
-}
+
 
 footer{
-    background-color: lightblue;
+    background-color: white;
     margin-top: 10px;
     padding: 20px;
     border: solid 2px;
