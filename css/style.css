@@ -111,16 +111,45 @@ aside a{
     margin: 5px 0;
     text-decoration: none;
 }
-.right-top{
+.left-top{
     margin-bottom: 10px;
 }
-.right-middle{
+.left-middle{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.left-bottom{
+    margin-top: 10px;
+}
+.search::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+#search{
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 50px;
+    width: calc(70% - 10px);
+    margin: 0 5px;
+    float: left;
+}
+#go{
+    color: lightgrey;
+    background-color: #504741;
+    height: 50px;
+    width: calc(30% - 10px);
+    margin: 0 5px;
+    float: left;
+}
+.right-top{
+    margin-bottom: 10px;
+    padding:10px;
 }
 .right-bottom{
     margin-top: 10px;
 }
+
 /*****______________ Stile main ______________*****/
 main{
     background-color: white;
